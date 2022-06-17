@@ -1,4 +1,4 @@
-﻿/*
+/*
 In NativeScript, the app.css file is where you place CSS rules that
 you would like to apply to your entire application. Check out
 http://docs.nativescript.org/ui/styling for a full list of the CSS
@@ -18,7 +18,7 @@ This is where the vast majority of your CSS code goes. */
 
 /*
 The following CSS rule changes the font size of all Buttons that have the
-'-primary' class modifier.
+"-primary" class modifier.
 */
 Button.-primary {
   font-size: 18;

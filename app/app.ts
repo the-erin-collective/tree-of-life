@@ -1,14 +1,8 @@
-/*
-In NativeScript, the app.ts file is the entry point to your application.
-You can use this file to perform app-level initialization, but the primary
-purpose of the file is to pass control to the app’s first module.
-*/
+import { platformNativeScript, runNativeScriptAngularApp } from '@nativescript/angular';
 
-import { Application } from '@nativescript/core'
+import { AppModule } from './app/app.module';
 
-Application.run({ moduleName: 'app-root' })
+runNativeScriptAngularApp({
+  appModuleBootstrap: () => platformNativeScript().bootstrapModule(AppModule),
+});
 
-/*
-Do not place any code after the application has been started as it will not
-be executed on iOS.
-*/
